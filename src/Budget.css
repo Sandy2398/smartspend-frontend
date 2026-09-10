@@ -1,0 +1,183 @@
+.budget-page {
+  min-height: calc(100vh - 70px);
+  padding: 50px 20px;
+  background: #f7f8fa;
+  font-family: Arial, sans-serif;
+}
+
+.budget-card {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.budget-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.budget-header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.budget-header p {
+  margin: 0;
+  color: #666;
+}
+
+.budget-form {
+  margin-bottom: 20px;
+}
+
+.budget-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.budget-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.budget-input-container span {
+  padding: 12px 15px;
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.budget-input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.budget-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.budget-button:hover {
+  background: #444;
+}
+
+.budget-message {
+  padding: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.budget-summary-item {
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.budget-summary-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.budget-summary-item strong {
+  font-size: 20px;
+}
+
+.positive {
+  color: #222;
+}
+
+.negative {
+  color: #d00000;
+}
+
+.budget-progress-section {
+  margin-top: 30px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #e5e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #222;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.budget-status {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.budget-status.success {
+  background: #eeeeee;
+}
+
+.budget-status.warning {
+  background: #f5f5f5;
+}
+
+.budget-status.danger {
+  background: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .budget-card {
+    padding: 25px 20px;
+  }
+
+  .budget-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-page {
+    padding: 30px 15px;
+  }
+}
